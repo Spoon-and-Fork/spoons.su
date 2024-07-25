@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url("/nacho_back.png") no-repeat center center fixed; 
+  min-height: 600px;
+  background-size: cover;
+}
+
+@layer components {
+  .bg-alt {
+    background: url("/nacho_back_2.png") no-repeat center center fixed;
+    min-height: 600px;
+    background-size: cover;
+  }
+}
