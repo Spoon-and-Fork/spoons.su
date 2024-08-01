@@ -38,6 +38,7 @@ export default function ProductPanelProduction(){
     { title: "Parsec", description: "Свяжитесь с нами!", imageSrc: "/projects/Parsec_logo.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
     { title: "То да сё", description: "Всё будет", imageSrc: "/projects/spoon.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
   ]
+  
   return(
     <div className="flex flex-wrap justify-center gap-4 p-10">
       {products.map((product, index) => (

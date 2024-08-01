@@ -23,6 +23,7 @@ export default function Main() {
             <div className="flex flex-col">
                 <div className="m-5"> <MainInfoBox/> </div>
             </div>
+            
             <div className="relative flex justify-center">
               <button className="bg-gray-400 md:bg-gray-200 text-white bg-opacity-50 px-10 py-2 rounded md:hover:bg-gray-700 transition-colors shadow-xl backdrop-blur-lg" onClick={() => {secpartScroll.current?.scrollIntoView({behavior: 'smooth'});}}>
                 <div className="text-gray-800 text-2xl bg-opacity-50 rounded">
