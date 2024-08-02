@@ -40,7 +40,7 @@ export default function Main() {
                 <div className="flex justify-center">
                     <div className="mt-20 rounded-lg bg-gray-300 shadow-lg bg-opacity-70 backdrop-blur-sm transition-all">
                         <div className="m-2 flex">
-                            <button onClick={() => goToLink("https://github.com/Spoon-and-Fork")} className="">
+                            <button onClick={() => goToLink("github.com/Spoon-and-Fork")} className="">
                               <Image
                                 src="/img/soc/gh.svg"
                                 width={64}
@@ -49,7 +49,7 @@ export default function Main() {
                                 alt="nacho"
                               />
                             </button>
-                            <button onClick={() => goToLink("https://t.me/+L-uYxHxk3WthYmM6")} className="">
+                            <button onClick={() => goToLink("t.me/+L-uYxHxk3WthYmM6")} className="">
                               <Image
                                 src="/img/soc/tg.svg"
                                 width={64}
