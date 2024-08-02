@@ -31,12 +31,12 @@ export function ProductPanel({ title, description, imageSrc, link }:{
 
 export default function ProductPanelProduction(){
   const products = [
-    { title: "Nextcloud", description: "cloud.spoons.su", imageSrc: "/projects/Nextcloud_Logo.svg", link: "cloud.spoons.su" },
-    { title: "Immich", description: "photos.spoons.su", imageSrc: "/projects/immich-logo.svg", link: "photos.spoons.su"  },
-    { title: "Microsoft Exchange", description: "mail.spoons.su", imageSrc: "/projects/exchange-logo.svg", link: "mail.spoons.su"  },
-    { title: "Matrix", description: "В разработке", imageSrc: "/projects/matrix-logo.svg", link: "null"  },
-    { title: "Parsec", description: "Свяжитесь с нами!", imageSrc: "/projects/Parsec_logo.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
-    { title: "То да сё", description: "Всё будет", imageSrc: "/projects/spoon.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
+    { title: "Nextcloud", description: "cloud.spoons.su", imageSrc: "/img/proj/cloud.svg", link: "cloud.spoons.su" },
+    { title: "Immich", description: "photos.spoons.su", imageSrc: "/img/proj/photos.svg", link: "photos.spoons.su"  },
+    { title: "Microsoft Exchange", description: "mail.spoons.su", imageSrc: "/img/proj/mail.svg", link: "mail.spoons.su"  },
+    { title: "Matrix", description: "В разработке", imageSrc: "/img/proj/messenger.svg", link: "null"  },
+    { title: "Parsec", description: "Свяжитесь с нами!", imageSrc: "/img/proj/parsec.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
+    { title: "То да сё", description: "Всё будет", imageSrc: "/img/proj/spoon.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
   ]
   
   return(

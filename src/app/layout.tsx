@@ -3,8 +3,8 @@ import "./globals.css";
 import { inter, montserrat } from './ui/fonts'
 
 export const metadata: Metadata = {
-  title: "spoons.global",
-  description: "Spoon and fork!",
+  title: "spoons.verse",
+  description: "Spoon and Fork",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body className={montserrat.className}>{children}</body>
     </html>
   );

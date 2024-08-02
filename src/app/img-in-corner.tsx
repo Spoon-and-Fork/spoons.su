@@ -10,9 +10,9 @@ export const OnscreenImg = ({ onClick }: {
         <button>
             <div className="rounded-xl">
                 <Image
-                src="/hero-desktop_transparent.png"
-                width={577}
-                height={577}
+                src="/img/back-to-top.png"
+                width={445}
+                height={445}
                 className="hidden md:block"
                 alt="nacho"
                 onClick={onClick}
@@ -21,10 +21,11 @@ export const OnscreenImg = ({ onClick }: {
         </button>
     );
 }
+
 export default function Logo() {
   return (
     <Image
-      src="/icon.png"
+      src="/img/favicon.ico"
       width={64}
       height={64}
       className="hidden md:block"

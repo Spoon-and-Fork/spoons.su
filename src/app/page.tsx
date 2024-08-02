@@ -27,7 +27,7 @@ export default function Main() {
             <div className="relative flex justify-center">
               <button className="bg-gray-400 md:bg-gray-200 text-white bg-opacity-50 px-10 py-2 rounded md:hover:bg-gray-700 transition-colors shadow-xl backdrop-blur-lg" onClick={() => {secpartScroll.current?.scrollIntoView({behavior: 'smooth'});}}>
                 <div className="text-gray-800 text-2xl bg-opacity-50 rounded">
-                    <>Наши проекты</>
+                    <>Наши сервисы</>
                 </div>
               </button>
             </div>
@@ -40,18 +40,18 @@ export default function Main() {
                 <div className="flex justify-center">
                     <div className="mt-20 rounded-lg bg-gray-300 shadow-lg bg-opacity-70 backdrop-blur-sm transition-all">
                         <div className="m-2 flex">
-                            <button onClick={() => goToLink("github.com/Spoon-and-Fork")} className="">
+                            <button onClick={() => goToLink("https://github.com/Spoon-and-Fork")} className="">
                               <Image
-                                src="/github-mark.svg"
+                                src="/img/soc/gh.svg"
                                 width={64}
                                 height={64}
                                 className="px-3"
                                 alt="nacho"
                               />
                             </button>
-                            <button onClick={() => goToLink("t.me/+L-uYxHxk3WthYmM6")} className="">
+                            <button onClick={() => goToLink("https://t.me/+L-uYxHxk3WthYmM6")} className="">
                               <Image
-                                src="/telegram-black-icon.svg"
+                                src="/img/soc/tg.svg"
                                 width={64}
                                 height={64}
                                 className="px-3" 
