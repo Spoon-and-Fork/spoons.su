@@ -1,3 +1,3 @@
 @echo off
 
-npm run start
+npm run start --- --port 3001
