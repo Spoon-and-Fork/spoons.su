@@ -29,7 +29,7 @@ export default function Main() {
               <div className="flex flex-col m-1">
                 <button className="m-1 bg-gray-200 md:bg-black md:text-gray-800 lg:text-white hover:text-gray-800 lg:bg-opacity-50 px-10 py-1 rounded md:hover:bg-pink-50 transition-colors shadow-xl backdrop-blur-lg" onClick={() => {secpartScroll.current?.scrollIntoView({behavior: 'smooth'});}}>
                   <div className=" text-2xl lg:bg-opacity-50 rounded">
-                      <>Наши проекты</>
+                      <>Наши сервисы</>
                   </div>
                 </button>
                 <button className="m-1 bg-gray-200 md:bg-black md:text-gray-800 lg:text-white hover:text-gray-800 lg:bg-opacity-50 px-10 py-1 rounded md:hover:bg-pink-50 transition-colors shadow-xl backdrop-blur-lg" onClick={() => {FAQpage.current?.scrollIntoView({behavior: 'smooth'});}}>
