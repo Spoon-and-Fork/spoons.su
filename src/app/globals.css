@@ -3,15 +3,33 @@
 @tailwind utilities;
 
 body {
-  background: url("/img/bg/up.jpg") no-repeat center center fixed; 
+  background-color: black;
   min-height: 600px;
-  background-size: cover;
 }
 
 @layer components {
-  .bg-alt {
-    background: url("/img/bg/dn.jpg") no-repeat center center fixed;
+  .bg-alt-1 {
+    background: url("/img/bg/up.webp") no-repeat center center fixed; 
     min-height: 600px;
     background-size: cover;
+    content-visibility: auto;
+  }
+}
+
+@layer components {
+  .bg-alt-2 {
+    background: url("/img/bg/dn.webp") no-repeat center center fixed;
+    min-height: 600px;
+    background-size: cover;
+    content-visibility: auto;
+  }
+}
+
+@layer components { 
+  .bg-alt-3 {
+    background: url("/img/bg/dn.webp") no-repeat center center fixed; /*CHANGE IMAGE*/
+    min-height: 600px;
+    background-size: cover;
+    content-visibility: auto;
   }
 }

@@ -16,9 +16,9 @@ export function MainInfoBox(){
           justify-center
           md:max-w-lg
           rounded-lg
-        bg-gray-400 
+        bg-gray-200 
           shadow-lg
-          bg-opacity-70 
+          
           backdrop-blur-sm
           py-6
           px-5
