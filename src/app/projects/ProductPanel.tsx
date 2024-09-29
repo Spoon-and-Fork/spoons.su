@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
-import { pages } from "next/dist/build/templates/app-page";
-
+import React from "react";
 export function goToLink(link: string) {
     if (link === 'null'){}
     else{
@@ -17,10 +15,10 @@ export function ProductPanel({ title, description, imageSrc, link }:{
   link:string
 }) {
   return (
-    <button className="flex flex-row justify-center bg-gray-300 rounded-lg shadow-lg bg-opacity-70 backdrop-blur-sm p-4 w-auto md:w-3/12 hover:bg-gray-400 transition-colors " onClick={() => goToLink(link)}>
-      <div className="w-52">
+    <button className="flex flex-row justify-center bg-gray-300 rounded-lg shadow-lg lg:bg-opacity-70 lg:backdrop-blur-sm p-4 w-auto md:w-3/12 hover:bg-gray-400 transition-colors " onClick={() => goToLink(link)}>
+      <div className="w-72">
         <div className="flex justify-center">       
-           <Image src={imageSrc} width={512} height={1024} alt={title} className="h-40" />
+           <Image src={imageSrc} alt={title} className="h-40" width={150} height={150}/>
         </div>
         <h2 className="text-xl font-semibold mb-2">{title}</h2>
         <p className="text-gray-600">{description}</p>
@@ -37,8 +35,7 @@ export default function ProductPanelProduction(){
     { title: "Matrix", description: "В разработке", imageSrc: "/img/proj/messenger.svg", link: "null"  },
     { title: "Parsec", description: "Свяжитесь с нами!", imageSrc: "/img/proj/parsec.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
     { title: "То да сё", description: "Всё будет", imageSrc: "/img/proj/spoon.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
-  ]
-  
+  ];
   return(
     <div className="flex flex-wrap justify-center gap-4 p-10">
       {products.map((product, index) => (
