@@ -21,8 +21,8 @@ export default function Main() {
     
     return(
       <>
-        <section id="1-part" className="">
-          <div className="min-h-screen bg-alt-1">
+        <section id="main-up" className="">
+          <div className="min-h-screen bg-main-up">
             <div className="flex flex-col">
                 <div className="sm:m-2 md:m-5"> <MainInfoBox/> </div>
             </div>
@@ -43,10 +43,10 @@ export default function Main() {
           </div>
         </section>
 
-        <section ref={secpartScroll} className="p-6 min-h-screen lg:bg-opacity-20 shadow-2xl borderborder-gray-400 transition-colors bg-alt-2">
-            <div className="lg:my-6" id="2-part">
+        <section ref={secpartScroll} className="p-6 min-h-screen lg:bg-opacity-20 shadow-2xl borderborder-gray-400 transition-colors bg-main-dn">
+            <div className="lg:my-6" id="main-dn">
                 <ProductPanelProduction/>
-                <button className="flex mx-auto my-4 bg-gray-200 md:bg-gray-400 rounded-lg shadow-lg lg:bg-opacity-70 lg:backdrop-blur-sm hover:bg-gray-300 transition-colors" onClick={() => {FAQpage.current?.scrollIntoView({behavior: 'smooth'});}}><div className="mx-5 my-2">Есть вопросы?</div></button>
+                {/*<Link href={'/faq'} className="flex mx-auto my-4 bg-gray-200 md:bg-gray-400 rounded-lg shadow-lg lg:bg-opacity-70 lg:backdrop-blur-sm hover:bg-gray-300 transition-colors" onClick={() => {FAQpage.current?.scrollIntoView({behavior: 'smooth'});}}><div className="mx-5 my-2">Есть вопросы?</div></Link>*/}
                 <div className="flex justify-center">
                     <div className="mt-7 rounded-lg bg-gray-300 shadow-lg lg:bg-opacity-70 lg:backdrop-blur-sm transition-all">
                         <div className="m-1 flex">

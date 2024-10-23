@@ -85,6 +85,16 @@ export function FAQsection_code() {
                                     </p>
                                 </dd>
                             </dl>
+                            <dl>
+                                <dt className="font-medium leading-6 text-gray-900 text-lg mt-4">
+                                    Как отсюда выйти?
+                                </dt>
+                                <dd className="mt-4">
+                                    <p className="leading-6 text-base text-gray-500">
+                                        Никак.
+                                    </p>
+                                </dd>
+                            </dl>
                         </div>
                     </div>
                 </div>

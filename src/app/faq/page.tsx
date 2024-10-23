@@ -5,7 +5,7 @@ import { FAQsection_code } from '@/app/faqsection'
 import Image from "next/image";
 import Link from "next/link";
 
-export function ArrowLeft(){
+/*export function ArrowLeft(){
   return(<>
     <Link href={'/'}>
                 <Image
@@ -17,12 +17,12 @@ export function ArrowLeft(){
                 />
               </Link></>
   )
-}
+}*/
 
 export default function Main() {
     return(
         <>
-          <div className="min-h-screen bg-alt-3" id="3-part">
+          <div className="min-h-screen bg-faq" id="faq">
             <div className="
               flex 
               justify-center 
@@ -44,7 +44,7 @@ export default function Main() {
               lg:bg-opacity-70 
               lg:backdrop-blur-sm">
               <div className="lg:absolute lg:left-10 bg-gray-300 rounded-lg hover:bg-gray-500 transition-colors">
-                <ArrowLeft/>
+              
               </div>
               <FAQsection_code/>
             </div>
