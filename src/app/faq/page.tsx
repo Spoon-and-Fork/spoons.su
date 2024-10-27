@@ -6,16 +6,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 /*export function ArrowLeft(){
-  return(<>
-    <Link href={'/'}>
-                <Image
-                      src="/img/ass/arrow-left.svg"
-                      width={64}
-                      height={64}
-                      className="px-3 py-1 hidden md:block"
-                      alt="nacho"
-                />
-              </Link></>
+  return(
+    <>
+      <Link href={'/'}>
+        <Image
+          src="/img/ass/arrow-left.svg"
+          width={64}
+          height={64}
+          className="px-3 py-1 hidden md:block"
+          alt="nacho"
+        />
+      </Link>
+    </>
   )
 }*/
 
