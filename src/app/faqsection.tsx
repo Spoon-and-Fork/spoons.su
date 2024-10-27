@@ -14,7 +14,7 @@ export function FAQsection_code() {
                         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12">
                             <dl>
                                 <dt className="font-medium leading-6 text-gray-900 text-lg mt-4">
-                                  При подключении к VPN через IKEv2 возникает ошибка \"Указнный порт уже открыт\".
+                                  При подключении к VPN через IKEv2 возникает ошибка &quot;Указнный порт уже открыт&quot;.
                                 </dt>
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
@@ -36,7 +36,7 @@ export function FAQsection_code() {
 
                             <dl>
                                 <dt className="font-medium leading-6 text-gray-900 text-lg mt-4">
-                                    При подключении к Outline возникает ошибка \"Ключ доступа недействителен\".
+                                    При подключении к Outline возникает ошибка &quot;Ключ доступа недействителен&quot;.
                                 </dt>
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
@@ -51,7 +51,7 @@ export function FAQsection_code() {
                                 </dt>
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
-                                        В приложении Strongswan нажмите \"⋮\", выберите \"Журнал\", затем \"Отправить журнал\" и пришлите его <a href='t.me/spoons_neko_bot'>нашему боту</a> - он разберется.
+                                        В приложении Strongswan нажмите &quot;⋮&quot;, выберите &quot;Журнал&quot;, затем &quot;Отправить журнал&quot; и пришлите его <a href='t.me/spoons_neko_bot'>нашему боту</a> - он разберется.
                                     </p>
                                 </dd>
                             </dl>
