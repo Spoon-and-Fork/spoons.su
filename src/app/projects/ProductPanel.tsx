@@ -34,9 +34,9 @@ export default function ProductPanelProduction(){
   const products = [
     { title: "Облачное хранилище Nextcloud", description: "cloud.spoons.su", imageSrc: "/img/proj/nextcloud.svg", link: "cloud.spoons.su" },
     { title: "Сервис хранения фотографий Immich", description: "photos.spoons.su", imageSrc: "/img/proj/immich.svg", link: "photos.spoons.su"  },
-    { title: "Почта Roundcube", description: "mail.spoons.su", imageSrc: "/img/proj/outlook.svg", link: "mail.spoons.su"  },
+    { title: "Почтовая служба", description: "mail.spoons.su", imageSrc: "/img/proj/outlook.svg", link: "mail.spoons.su"  },
     { title: "Мессенджер Element", description: "element.spoons.su", imageSrc: "/img/proj/element.svg", link: "element.spoons.su"  },
-    { title: "Parsec", description: "Свяжитесь с нами!", imageSrc: "/img/proj/parsec.svg", link: "t.me/spoons_neko_bot"  },
+    { title: "Игровой сервис Parsec", description: "Свяжитесь с нами!", imageSrc: "/img/proj/parsec.svg", link: "t.me/spoons_neko_bot"  },
     { title: "VPN", description: "Свяжитесь с нами!", imageSrc: "/img/proj/vpn.svg", link: "t.me/spoons_neko_bot"  },
     { title: "TeamSpeak", description: "ts.spoons.su", imageSrc: "/img/proj/teamspeak.svg", link: "tmspk.gg/QAhU3RxA"  },
     { title: "То да сё", description: "Всё будет", imageSrc: "/img/proj/spoon.svg", link: "t.me/+LX_nVyDNeHRhODc6"  },
