@@ -11,8 +11,9 @@ export function goToLink(link: string) {
         window.location.href = "https://" + link;}
 };
 
-export function ProductPanel({ title, description, imageSrc, link }:{
+export function ProductPanel({ title, title2, description, imageSrc, link }:{
   title:string,
+  title2:string,
   description:string,
   imageSrc:string,
   link:string
@@ -24,6 +25,7 @@ export function ProductPanel({ title, description, imageSrc, link }:{
            <Image src={imageSrc} alt={title} className="h-40" width={150} height={150}/>
         </div>
         <h2 className="text-xl font-semibold mb-2">{title}</h2>
+        <h2 className="text-xl font-semibold mb-2">{title2}</h2>
         <p className="text-gray-600">{description}</p>
       </div>
     </button>
@@ -32,14 +34,14 @@ export function ProductPanel({ title, description, imageSrc, link }:{
 
 export default function ProductPanelProduction(){
   const products = [
-    { title: "Nextcloud", description: "cloud.spoons.su", imageSrc: "/img/proj/cloud.svg", link: "cloud.spoons.su" },
-    { title: "Immich", description: "photos.spoons.su", imageSrc: "/img/proj/photos.svg", link: "photos.spoons.su"  },
-    { title: "Microsoft Exchange", description: "mail.spoons.su", imageSrc: "/img/proj/mail.svg", link: "mail.spoons.su"  },
-    { title: "Matrix", description: "В разработке", imageSrc: "/img/proj/messenger.svg", link: "null"  },
-    { title: "Parsec", description: "Свяжитесь с нами!", imageSrc: "/img/proj/parsec.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
-    { title: "Revolt", description: "В разработке", imageSrc: "/img/proj/revolt.svg", link: "null"  },
-    { title: "TeamSpeak", description: "ts.spoons.su", imageSrc: "/img/proj/teamspeak.svg", link: "https://tmspk.gg/QAhU3RxA"  },
-    { title: "То да сё", description: "Всё будет", imageSrc: "/img/proj/spoon.svg", link: "t.me/+L-uYxHxk3WthYmM6"  },
+    { title: "Облачное хранилище", title2: "Nextcloud", description: "cloud.spoons.su", imageSrc: "/img/proj/nextcloud.svg", link: "cloud.spoons.su" },
+    { title: "Фотопленка ", title2: "Immich", description: "photos.spoons.su", imageSrc: "/img/proj/immich.svg", link: "photos.spoons.su"  },
+    { title: "Почтовая служба", title2: "Roundcube", description: "mail.spoons.su", imageSrc: "/img/proj/outlook.svg", link: "mail.spoons.su"  },
+    { title: "Мессенджер", title2: "Element", description: "element.spoons.su", imageSrc: "/img/proj/element.svg", link: "element.spoons.su"  },
+    { title: "Игровой сервис", title2: "Parsec", description: "Свяжитесь с нами!", imageSrc: "/img/proj/parsec.svg", link: "t.me/spoons_neko_bot"  },
+    { title: "VPN", title2: "", description: "Свяжитесь с нами!", imageSrc: "/img/proj/vpn.svg", link: "t.me/spoons_neko_bot"  },
+    { title: "TeamSpeak", title2: "", description: "ts.spoons.su", imageSrc: "/img/proj/teamspeak.svg", link: "tmspk.gg/QAhU3RxA"  },
+    { title: "То да сё", title2: "", description: "Всё будет", imageSrc: "/img/proj/spoon.svg", link: "t.me/+LX_nVyDNeHRhODc6"  },
   ];
   return(
     <div className="flex flex-wrap justify-center gap-4 p-2">
@@ -47,6 +49,7 @@ export default function ProductPanelProduction(){
         <ProductPanel
           key={index}
           title={product.title}
+          title2={product.title2}
           description={product.description}
           imageSrc={product.imageSrc}
           link={product.link}

@@ -8,8 +8,8 @@ body {
 }
 
 @layer components {
-  .bg-alt-1 {
-    background: url("/img/bg/up.webp") no-repeat center center fixed; 
+  .bg-main-up {
+    background: url("/img/bg/up.gif") no-repeat center center fixed; 
     min-height: 600px;
     background-size: cover;
     content-visibility: auto;
@@ -17,8 +17,8 @@ body {
 }
 
 @layer components {
-  .bg-alt-2 {
-    background: url("/img/bg/dn.webp") no-repeat center center fixed;
+  .bg-main-dn {
+    background: url("/img/bg/dn.gif") no-repeat center center fixed;
     min-height: 600px;
     background-size: cover;
     content-visibility: auto;
@@ -26,8 +26,8 @@ body {
 }
 
 @layer components { 
-  .bg-alt-3 {
-    background: url("/img/bg/dn.webp") no-repeat center center fixed; /*CHANGE IMAGE*/
+  .bg-faq {
+    background: url("/img/bg/faq.gif") no-repeat center center fixed; /*CHANGE IMAGE*/
     min-height: 600px;
     background-size: cover;
     content-visibility: auto;

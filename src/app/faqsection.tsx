@@ -14,11 +14,11 @@ export function FAQsection_code() {
                         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12">
                             <dl>
                                 <dt className="font-medium leading-6 text-gray-900 text-lg mt-4">
-                                  Почему тут аниме?
+                                  При подключении к VPN через IKEv2 возникает ошибка &quot;Указнный порт уже открыт&quot;.
                                 </dt>
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
-                                        Админ анимешник
+                                        Перезагрузите компьютер и попробуйте подключиться снова.
                                     </p>
                                 </dd>
                             </dl>
@@ -29,29 +29,29 @@ export function FAQsection_code() {
                                 </dt>
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
-                                        Подписывайтесь на наш телеграм канал!
+                                        Напишите в ЛС <a href='t.me/spoons_neko_bot'>нашему боту</a>.
                                     </p>
                                 </dd>
                             </dl>
 
                             <dl>
                                 <dt className="font-medium leading-6 text-gray-900 text-lg mt-4">
-                                    В чем смысл жизни?
+                                    При подключении к Outline возникает ошибка &quot;Ключ доступа недействителен&quot;.
                                 </dt>
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
-                                        В кошкодевочках
+                                        Скорее всего, срок действия ключа истек. Напишите <a href='t.me/spoons_neko_bot'>нашему боту</a> и попросите новый ключ.
                                     </p>
                                 </dd>
                             </dl>
 
                             <dl>
                                 <dt className="font-medium leading-6 text-gray-900 text-lg mt-4">
-                                    Который час?
+                                    Strongswan не подключается.
                                 </dt>
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
-                                        Посмотрите на часы
+                                        В приложении Strongswan нажмите &quot;⋮&quot;, выберите &quot;Журнал&quot;, затем &quot;Отправить журнал&quot; и пришлите его <a href='t.me/spoons_neko_bot'>нашему боту</a> - он разберется.
                                     </p>
                                 </dd>
                             </dl>
@@ -71,7 +71,7 @@ export function FAQsection_code() {
                                 </dt>
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
-                                        У меня тоже
+                                        Мы делаем все чтобы оптимизировать загрузку сайта (но пока получается не очень).
                                     </p>
                                 </dd>
                             </dl>
@@ -82,6 +82,16 @@ export function FAQsection_code() {
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
                                         Снова.
+                                    </p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt className="font-medium leading-6 text-gray-900 text-lg mt-4">
+                                    Как отсюда выйти?
+                                </dt>
+                                <dd className="mt-4">
+                                    <p className="leading-6 text-base text-gray-500">
+                                        Никак.
                                     </p>
                                 </dd>
                             </dl>
