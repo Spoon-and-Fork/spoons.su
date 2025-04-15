@@ -1,35 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
 
 body {
-  background-color: black;
-  min-height: 600px;
+  color: var(--foreground);
+  background: var(--background);
 }
 
-@layer components {
-  .bg-main-up {
-    background: url("/img/bg/up.gif") no-repeat center center fixed; 
-    min-height: 600px;
-    background-size: cover;
-    content-visibility: auto;
-  }
-}
-
-@layer components {
-  .bg-main-dn {
-    background: url("/img/bg/dn.gif") no-repeat center center fixed;
-    min-height: 600px;
-    background-size: cover;
-    content-visibility: auto;
-  }
-}
-
-@layer components { 
-  .bg-faq {
-    background: url("/img/bg/faq.gif") no-repeat center center fixed; /*CHANGE IMAGE*/
-    min-height: 600px;
-    background-size: cover;
-    content-visibility: auto;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }

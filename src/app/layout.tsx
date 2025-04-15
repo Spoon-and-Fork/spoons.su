@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { inter, montserrat } from './ui/fonts'
+import AuthProvider from "@/provider/authProvider";
 
 export const metadata: Metadata = {
-  title: "spoons.global",
-  description: "Spoon and fork!",
+  title: "spoons.su",
+  description: "Spoon and Fork!",
 };
 
 export default function RootLayout({
@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 }

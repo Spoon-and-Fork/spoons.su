@@ -1,10 +1,10 @@
 'use client'
 
 import '@/app/css/mainpage.css'
-import { FAQsection_code } from "../components/FAQ";
+import { AboutSection } from "../components/AboutSection";
 import NavigationBar from '../nav/navbar';
 
-export default function Third_Page() {
+export default function AboutPage() {
   return (
     <body>
       <nav>{NavigationBar()}</nav>
@@ -12,7 +12,7 @@ export default function Third_Page() {
         <div className="
               flex 
               justify-center 
-              max-w-screen-lg 
+              max-w-screen-2xl
               mx-auto
             bg-gray-300 
               rounded-lg 
@@ -29,7 +29,7 @@ export default function Third_Page() {
               lg:my-32 
               lg:bg-opacity-70 
               lg:backdrop-blur-sm">
-          <FAQsection_code />
+          <AboutSection />
         </div>
       </div>
     </body>
