@@ -1,0 +1,50 @@
+.navbar {
+    background-color: #303030;
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+}
+
+.navbar ul {
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.navbar li {
+    background-color:rgb(25, 25, 25);
+    float: right;
+    color: white;
+    float: right;
+    margin: 1rem .5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    text-transform: lowercase;
+}
+
+.navbar li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+.navbar li:hover{
+    background-color: rgb(35, 35, 35);
+    transition: 0.5s;
+}
+
+.navbar li ::before{
+content: '#';
+}
+
+.navbar li.navicon {
+    background-color: transparent;
+    float: left;
+}
+
+.navbar {
+    z-index: 99;
+    border: 10px;
+    border-radius: 1px;
+    border-color: #303030;
+}

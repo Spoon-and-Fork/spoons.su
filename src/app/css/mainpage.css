@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   font-family: montserrat;
+}
+
+.maintext {
+    display: flex;
+    justify-content: center;
+    color: #333;
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: #333 1px 0 5px;
+    user-select: none;
+}
+
+@layer components {
+    .bg-alt-1 {
+        background: url("/img/bg/up.webp") no-repeat center center fixed;
+        min-height: 600px;
+        background-size: cover;
+        content-visibility: auto;
+    }
+
+    .bg-alt-2 {
+        background: url("/img/bg/dn.webp") no-repeat center center fixed;
+        min-height: 600px;
+        background-size: cover;
+        content-visibility: auto;
+    }
+
+    .bg-alt-3 {
+        background: url("/img/bg/dn.webp") no-repeat center center fixed;
+        /*CHANGE IMAGE*/
+        min-height: 600px;
+        background-size: cover;
+        content-visibility: auto;
+    }
+
+    .page {
+        min-height: 100vh;
+        transition: 0.5s;
+    }
+}
