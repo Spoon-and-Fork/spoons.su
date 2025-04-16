@@ -1,0 +1,14 @@
+[Unit]
+Description=starting spoons su site
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ubuntu
+WorkingDirectory=/var/www/spoons.su
+ExecStart=/usr/bin/npm run start
+
+[Install]
+WantedBy=multi-user.target
