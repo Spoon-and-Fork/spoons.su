@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     const user = usersData.find((user: Account) => user.username === username); 
 
     if (!user) {
-      return new Response(JSON.stringify({ error: "User not found" }), { status: 404 });
+      return new Response(JSON.stringify({ error: "Invalid credentials" }), { status: 401 });
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.password);
@@ -31,7 +31,6 @@ export async function POST(req: Request) {
       return new Response(JSON.stringify({ error: "Invalid credentials" }), { status: 401 });
     }
 
-    // Генерация JWT с ролью
     const token = jwt.sign(
       { username: user.username, role: user.role }, // Теперь передаем `role`
       process.env.JWT_SECRET as string,

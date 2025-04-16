@@ -14,7 +14,6 @@ export async function GET(req: Request) {
     const authHeader = req.headers.get("Authorization");
 
     if (!authHeader || !authHeader.startsWith("Bearer ")) {
-        console.log("Unauthorized");
         return new Response(JSON.stringify({ error: "Unauthorized" }), { status: 401 });
     }
 
@@ -27,7 +26,6 @@ export async function GET(req: Request) {
         const user = users.find((u: Account) => u.username === decoded.username);
 
         if (!user) {
-            console.log("User not found");
             return new Response(JSON.stringify({ error: "User not found" }), { status: 404 });
         }
 
