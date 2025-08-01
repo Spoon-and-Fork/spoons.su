@@ -34,11 +34,8 @@ export default function ProductPanelProduction() {
   const products = [
     { title: "Nextcloud", description: "cloud.spoons.su", imageSrc: "/img/proj/cloud.svg", link: "cloud.spoons.su" },
     { title: "Immich", description: "photos.spoons.su", imageSrc: "/img/proj/photos.svg", link: "photos.spoons.su" },
-    { title: "Microsoft Exchange", description: "mail.spoons.su", imageSrc: "/img/proj/mail.svg", link: "mail.spoons.su" },
+    { title: "Почта", description: "mail.spoons.su", imageSrc: "/img/proj/mail-legacy.svg", link: "mail.spoons.su" },
     { title: "Element", description: "element.spoons.su", imageSrc: "/img/proj/element-black.svg", link: "element.spoons.su" },
-    { title: "Parsec", description: "Свяжитесь с нами!", imageSrc: "/img/proj/parsec.svg", link: "t.me/+L-uYxHxk3WthYmM6" },
-    { title: "Revolt", description: "В разработке", imageSrc: "/img/proj/revolt.svg", link: "null" },
-    { title: "TeamSpeak", description: "ts.spoons.su", imageSrc: "/img/proj/teamspeak.svg", link: "https://tmspk.gg/QAhU3RxA" },
     { title: "То да сё", description: "Всё будет", imageSrc: "/img/proj/spoon.svg", link: "t.me/+L-uYxHxk3WthYmM6" },
   ];
   return (
