@@ -2,9 +2,10 @@
 
 import '@/app/css/mainpage.css'
 import { useRef } from "react";
-import ProductPanelProduction, { goToLink } from "../components/ProductPanel";
+import ProductPanelProduction from "../components/ProductPanel";
 import Image from "next/image";
 import NavigationBar from '../nav/navbar';
+import { goToLink } from '../components/goToLink';
 
 export default function Second_Page() {
     const secpartScroll = useRef<HTMLElement | null>(null);

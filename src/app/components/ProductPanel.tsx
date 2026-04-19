@@ -1,13 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
-export function goToLink(link: string) {
-  if (link === "null" || "" || undefined) { }
-  else {
-    window.location.href = "https://" + link;
-  }
-};
+import { goToLink } from "./goToLink";
 
 export function ProductPanel({ title, description, imageSrc, link }: {
   title: string,

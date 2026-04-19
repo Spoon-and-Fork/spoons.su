@@ -1,7 +1,6 @@
 "use client";
 
-import Link from 'next/link';
-import React from 'react';
+import { goToLink } from './goToLink';
 
 export function FAQsection_code() {
     return (
@@ -30,7 +29,7 @@ export function FAQsection_code() {
                                 </dt>
                                 <dd className="mt-4">
                                     <p className="leading-6 text-base text-gray-500">
-                                        Связаться с нами можно через <Link className="underline" href={process.env.NEXT_PUBLIC_TGBOT_LINK?.toString() ?? "t.me/spoons_support_bot"}>бота поддержки в Telegram </Link> или чат на сайте (Кнопка &quot;Поддержка&quot; в верхней части страницы)
+                                        Связаться с нами можно через <button className="underline cursor-pointer" onClick={() => goToLink(process.env.NEXT_PUBLIC_TGBOT_LINK! ?? "t.me/spoons_support_bot")}> бота поддержки в Telegram</button>{" "}или чат на сайте (Кнопка &quot;Поддержка&quot; в верхней части страницы)
                                     </p>
                                 </dd>
                             </dl>
