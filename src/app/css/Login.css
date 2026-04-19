@@ -1,0 +1,44 @@
+body {
+    background: url("/img/bg/up.webp") no-repeat center center fixed;
+    background-size: cover;
+} 
+
+.loginwindow {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#authWindow {
+    width:fit-content;
+    background-color: #333;
+    flex-direction: column;
+    padding: 1rem;
+    text-transform: lowercase;
+    border-radius: 5px;
+}
+
+input {
+    text-transform: lowercase;
+    background-color: #222;
+    gap: 1rem;
+    margin: 5px 0 0 0;
+    padding: 5px;
+}
+
+input ::placeholder{
+    color: #333;
+}
+
+.btn {
+    position: relative;
+    background-color: #111;
+    border-radius: 5px;
+    margin: 5px 0 0 0;
+    padding: 1px 10px 1px 10px;
+}
+
+.text_input {
+    border-radius: 5px;
+}
