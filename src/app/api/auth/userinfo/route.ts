@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 
 export const dynamic = 'force-dynamic';
 
-export async function GET() {
+export async function GET() { return } /*
   try {
     const cookieStore = await cookies();
     const accessToken = cookieStore.get('access_token')?.value;
@@ -53,3 +53,4 @@ export async function GET() {
     );
   }
 }
+*/

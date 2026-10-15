@@ -1,19 +1,19 @@
 'use client'
-
-import '@/app/css/mainpage.css'
+//
 import { useRef } from "react";
 import ProductPanelProduction from "../components/ProductPanel";
 import Image from "next/image";
-import NavigationBar from '../nav/navbar';
 import { goToLink } from '../components/goToLink';
 
 export default function Second_Page() {
     const secpartScroll = useRef<HTMLElement | null>(null);
     return (
-        <div className="content">
-            <nav>{NavigationBar()}</nav>
-            <section ref={secpartScroll} className="page p-6 lg:bg-opacity-20 shadow-2xl transition-colors bg-alt-2 flex items-center justify-center">
-                <div className="lg:my-6 mt-[20vh]" id="2-part">
+        <div className="">
+            <div className="fixed inset-0 z-0">
+                <Image src="/img/bg/dn.webp" alt='' fill unoptimized className='object-cover pointer-events-none' />
+            </div>
+            <section ref={secpartScroll} className="relative min-h-screen flex items-center justify-center">
+                <div className="lg:my-6 mt-20 lg:mt-20 mb-20" id="2-part">
                     <ProductPanelProduction />
                     <div className="flex justify-center">
                         <div className="mt-7 rounded-lg bg-gray-300/70 shadow-lg lg:bg-opacity-70 lg:backdrop-blur-sm transition-all">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import AuthProvider from "@/provider/authProvider";
+import NavigationBar from "./nav/navbar";
 
 export const metadata: Metadata = {
   title: "spoons.su",
@@ -14,8 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <AuthProvider>{children}</AuthProvider>
+      <body className="overflow-x-clip"> {/* **:outline-[red] **:outline-1 */}
+        <AuthProvider>
+          <NavigationBar />
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

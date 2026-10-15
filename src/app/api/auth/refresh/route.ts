@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 
 export const dynamic = 'force-dynamic';
 
-export async function POST() {
+export async function POST() { return } /*
   try {
     const cookieStore = await cookies();
     const refreshToken = cookieStore.get('refresh_token')?.value;
@@ -90,3 +90,4 @@ export async function POST() {
     );
   }
 }
+*/

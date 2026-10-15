@@ -5,24 +5,13 @@ import { goToLink } from './goToLink';
 export function FAQsection_code() {
     return (
         <>
-            <div className="">
-                <div className="">
+            <section className="">
+                <article className="">
                     <h2 className="text-3xl leading-9 font-extrabold text-gray-900 text-center">
                         Возможно, здесь есть ответ на ваш вопрос
                     </h2>
-                    <div className="mt-6 border-t-4 border-gray-100 pt-10">
+                    <div className="mt-6 border-t border-gray-100/50 pt-10">
                         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12">
-                            <dl>
-                                <dt className="font-medium leading-6 text-gray-900 text-lg mt-4">
-                                    Почему тут аниме?
-                                </dt>
-                                <dd className="mt-4">
-                                    <p className="leading-6 text-base text-gray-500">
-                                        Админ анимешник
-                                    </p>
-                                </dd>
-                            </dl>
-
                             <dl>
                                 <dt className="font-medium leading-6 text-gray-900 text-lg mt-4">
                                     Как с вами связаться?
@@ -87,8 +76,8 @@ export function FAQsection_code() {
                             </dl>
                         </div>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
         </>
     );
 }

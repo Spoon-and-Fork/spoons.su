@@ -1,6 +1,5 @@
-import '@/app/css/mainpage.css'
+//
 import '@/app/css/Login.css'
-import NavigationBar from '@/app/nav/navbar';
 import { cookies } from 'next/headers';
 import Docs from './components/docs';
 import { redirect } from 'next/navigation';
@@ -17,7 +16,6 @@ export default async function PanelPage() {
 
   return (
     <>
-      <nav>{NavigationBar()}</nav>
       <Docs />
     </>
   );

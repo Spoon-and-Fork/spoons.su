@@ -1,7 +1,7 @@
 'use client'
 
-import "@/app/css/authPage.css";
-import "@/app/css/Login.css";
+//import "@/app/css/authPage.css";
+//import "@/app/css/Login.css";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -32,7 +32,7 @@ export default function Auth_Page() {
                 setIsLoading(false);
             }
         };
-        
+
         OAuthRedirect();
     }, [router]);
 

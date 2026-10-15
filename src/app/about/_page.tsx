@@ -1,6 +1,6 @@
 'use client'
 
-import '@/app/css/mainpage.css'
+//
 import { AboutSection } from "../components/AboutSection";
 import NavigationBar from '../nav/navbar';
 
