@@ -18,7 +18,9 @@ export default function RootLayout({
       <body className="overflow-x-clip"> {/* **:outline-[red] **:outline-1 */}
         <AuthProvider>
           <NavigationBar />
-          {children}
+          <main>
+            {children}
+          </main>
         </AuthProvider>
       </body>
     </html>

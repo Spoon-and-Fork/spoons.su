@@ -23,9 +23,9 @@ export default function NavigationBar() {
                 data-lpignore="true"
                 autoComplete="off"
             ></input>
-            <div className="drawer-content flex flex-col max-h-12">
-                <div className="navbar bg-neutral-800 w-full">
-                    <Link href="/" className='float-right text-white my-2 mx-1 border-0 rounded-xl ml-5 md:ml-10'>spoons.su</Link>
+            <div className="drawer-content flex flex-col">
+                <div className="flex bg-neutral-800 w-full items-center">
+                    <Link href="/" className='float-right text-white border-0 rounded-xl ml-5 md:ml-10'>spoons.su</Link>
                     <div className="flex-none lg:hidden ml-auto">
                         <label htmlFor="my-drawer-2" aria-label="open sidebar" className="btn btn-square btn-ghost drawer-button">
                             <svg
@@ -44,17 +44,19 @@ export default function NavigationBar() {
                         </label>
                     </div>
                     <nav className="hidden flex-none lg:flex ml-auto">
-                        <ul className='menu menu-horizontal flex-row-reverse'>
-                            <li className='float-right text-white my-2 mx-1 border-0 rounded-md bg-neutral-950'>
-                                <Link href="https://jivo.chat/dMMab5e5zq">Поддержка</Link>
+                        <ul className='flex gap-2 py-3 px-10'>
+                            <li className=''>
+                                <Link href="/" className='px-2 py-2 text-white rounded-md bg-neutral-900/70 hover:bg-neutral-900/40 transition-colors'>Главная</Link>
                             </li>
-                            <li className='float-right text-white my-2 mx-1 border-0 rounded-md bg-neutral-950'>
-                                <Link href="/faq">FAQ</Link>
+                            <li className=''>
+                                <Link href="/products" className='px-2 py-2 text-white rounded-md bg-neutral-900/70 hover:bg-neutral-900/40 transition-colors'>Продукты</Link>
                             </li>
-                            <li className='float-right text-white my-2 mx-1 border-0 rounded-md bg-neutral-950'>
-                                <Link href="/products">Продукты</Link>
+                            <li className=''>
+                                <Link href="/faq" className='px-2 py-2 text-white rounded-md bg-neutral-900/70 hover:bg-neutral-900/40 transition-colors'>FAQ</Link>
                             </li>
-                            <li className='float-right text-white my-2 mx-1 border-0 rounded-md bg-neutral-950'><Link href="/">Главная</Link></li>
+                            <li className=''>
+                                <Link href="https://jivo.chat/dMMab5e5zq" className='px-2 py-2 text-white rounded-md bg-neutral-900/70 hover:bg-neutral-900/40 transition-colors'>Поддержка</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -66,13 +68,13 @@ export default function NavigationBar() {
                         <Link href="/" className="hover:underline" onClick={toggle}>Главная</Link>
                     </li>
                     <li className='float-right text-white my-2 mx-1 border-0 rounded-md bg-neutral-950'>
-                        <Link href="https://jivo.chat/dMMab5e5zq">Поддержка</Link>
+                        <Link href="/faq" onClick={toggle}>FAQ</Link>
                     </li>
                     <li className='float-right text-white my-2 mx-1 border-0 rounded-md bg-neutral-950'>
-                        <Link href="/faq">FAQ</Link>
+                        <Link href="/products" onClick={toggle}>Продукты</Link>
                     </li>
                     <li className='float-right text-white my-2 mx-1 border-0 rounded-md bg-neutral-950'>
-                        <Link href="/products">Продукты</Link>
+                        <Link href="https://jivo.chat/dMMab5e5zq" onClick={toggle}>Поддержка</Link>
                     </li>
                 </ul>
             </nav>
