@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_GITHUB_LINK: ${COMPANY_GH_LINK}
+        NEXT_PUBLIC_TGBOT_LINK: ${COMPANY_TGBOT_LINK}
+        NEXT_PUBLIC_SUPPORT_SITE_LINK: ${COMPANY_SUPPORT_LINK}
+    environment:
+      NODE_ENV: production
+      OAUTH_CLIENT_SECRET: ${OAUTH_CLIENT_SECRET}
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
